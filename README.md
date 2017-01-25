@@ -25,7 +25,11 @@ Use type color and give a base value, and you are good to go!
 .addEventListener('change', functionHere);
 .addEventListener('mousemove', functionHere);
 
-* 
+* this lesson uses HTML data-* again.  The word after data is a variable you set, then you pass a value (="px") that you can use in your JavaScript.
+
+* one can use the data from data-*  by using this.dataset in a function.  this.dataset returns an OBJECT that holds all the values paired to data-* . In this repo, this.dataset gives you "px"
+
+*
 
 ## Setup/Installation Requirements
 
