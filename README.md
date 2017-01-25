@@ -9,8 +9,23 @@
 
 ## Learnings
 
-*
+* you can make a slider in HTML:
+<input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+The min and max values set the parameters.
 
+* you can also get the color picker to show up in an input with: <input id="base" type="color" name="base" value="#ffc600">
+Use type color and give a base value, and you are good to go!
+
+* CSS VARIABLES!
+      1. make a :root {} where inside it, you set some vars like: --baseColor: #40e0d0;
+
+      2. then use it where you like as: background-color: var(--baseColor);
+
+* EVENT LISTENER types:
+.addEventListener('change', functionHere);
+.addEventListener('mousemove', functionHere);
+
+* 
 
 ## Setup/Installation Requirements
 
