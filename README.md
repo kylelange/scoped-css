@@ -1,6 +1,6 @@
-# _Title_
+# _Scoped CSS_
 
-#### _{Description Here}, {DATE}_
+#### _{???.}, {Jan 25th, 2017}_
 
 #### By _**Kyle Lange**_
 
@@ -10,7 +10,6 @@
 ## Learnings
 
 *
-
 
 
 ## Setup/Installation Requirements
@@ -32,8 +31,8 @@ For questions or comments, please __email  [Kyle here.](baronsintrees@gmail.com)
 ## Technologies Used
 
 * HTML5
-* CSS3 with Bootstrap 3
-* JavaScript
+* CSS3
+* Vanilla JavaScript
 
 ### License
 
