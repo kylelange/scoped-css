@@ -4,8 +4,6 @@
 
 #### By _**Kyle Lange**_
 
-### See it [live here.](https://kylelange.github.io/scoped-css)
-
 ![screenshot](Screen Shot.png)
 
 
