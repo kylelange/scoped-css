@@ -1,8 +1,10 @@
 # _Scoped CSS_
 
-#### _{???.}, {Jan 25th, 2017}_
+#### _{Use the new CSS variables and Javascript to make real-time changes to css attributes!}, {Jan 25th, 2017}_
 
 #### By _**Kyle Lange**_
+
+### See it [live here.](https://kylelange.github.io/scoped-css)
 
 ![screenshot](Screen Shot.png)
 
