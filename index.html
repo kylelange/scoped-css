@@ -36,6 +36,8 @@
       background-color: var(--base);
       filter: blur(var(--blur));
       border-radius: var(--rounded);
+      /*-webkit-border-radius: var(--rounded);
+      -moz-border-radius: var(--rounded);*/
       /*border-radius: 5%;*/
     }
 
@@ -73,11 +75,11 @@
     const inputs = document.querySelectorAll('.controls input');
 
     function handleUpdate() {
-      console.log(this.value);
-      console.log(this.name);
+      //console.log(this.value);
+      //console.log(this.name);
       //console.log(this.dataset);
       const suffix = this.dataset.sizing || '';
-      console.log(suffix);
+      //console.log(suffix);
       document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
     }
 
