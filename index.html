@@ -28,17 +28,18 @@
       --base: #40e0d0;
       --spacing: 10px;
       --blur: 5px;
-      --rounded: 5%;
+      --radius: 5%;
+      --margin: 10px;
     }
 
     img {
       padding: var(--spacing);
       background-color: var(--base);
       filter: blur(var(--blur));
-      border-radius: var(--rounded);
-      /*-webkit-border-radius: var(--rounded);
-      -moz-border-radius: var(--rounded);*/
-      /*border-radius: 5%;*/
+      margin-top: var(--margin);
+      -webkit-border-radius: var(--radius);
+      -moz-border-radius: var(--radius);
+      border-radius: var(--radius);
     }
 
     .hl {
