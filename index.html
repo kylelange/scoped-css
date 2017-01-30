@@ -25,8 +25,10 @@
 
   <div class="controls">
     <label for="blur">Blur:</label>
-    <input id="blur" type="range" name="blur" min="0" max="25" value="5" data-sizing="px">
+    <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
 
+    <label for="skew">Skew:</label>
+    <input id="skew" type="range" name="skew" min="-15" max="15" value="0" data-sizing="deg">
 
   </div>
 
@@ -41,6 +43,7 @@
       --margin: 10px;
       --hue: 0deg;
       --greyscale: 0;
+      --skew: 0deg;
     }
 
     .hl {
@@ -66,6 +69,7 @@
       border-radius: var(--rounded);
       Padding: 10px;
       filter: blur(var(--blur));
+      transform: skewY(var(--skew));
 
     }
 
