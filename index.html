@@ -32,9 +32,9 @@
 
     <label for="radius">Radius:</label>
     <input id="radius" type="range" name="radius" min="0" max="50" value="5" data-sizing="%">
-    
-    <label for="radius">Radius:</label>
-    <input id="radius" type="range" name="radius" min="0" max="50" value="5" data-sizing="%">
+
+    <label for="radius">Hue-Rotate:</label>
+    <input id="hue-rotate" type="range" name="radius" min="0" max="90" value="0" data-sizing="deg">
 
   </div>
 
@@ -47,6 +47,7 @@
       --blur: 5px;
       --radius: 5%;
       --margin: 10px;
+      --hue: 0deg;
     }
 
     .hl {
@@ -69,6 +70,7 @@
       background-color: var(--base);
       border-radius: var(--rounded);
       Padding: 10px;
+      filter: hue-rotate(var(--hue));
 
     }
 
