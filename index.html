@@ -21,7 +21,24 @@
     <input id="base" type="color" name="base" value="#40e0d0">
   </div>
 
-  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+  <img class="hiker" src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="5" data-sizing="px">
+
+    <label for="radius">Radius:</label>
+    <input id="radius" type="range" name="radius" min="0" max="50" value="5" data-sizing="%">
+    
+    <label for="radius">Radius:</label>
+    <input id="radius" type="range" name="radius" min="0" max="50" value="5" data-sizing="%">
+
+  </div>
+
+  <img class="porsche" src="img/porsche.jpg">
 
   <style>
     :root {
@@ -32,7 +49,11 @@
       --margin: 10px;
     }
 
-    img {
+    .hl {
+      color: var(--base);
+    }
+
+    .hiker {
       padding: var(--spacing);
       background-color: var(--base);
       filter: blur(var(--blur));
@@ -42,9 +63,15 @@
       border-radius: var(--radius);
     }
 
-    .hl {
-      color: var(--base);
+    .porsche {
+      width: 800px;
+      height: 500px;
+      background-color: var(--base);
+      border-radius: var(--rounded);
+      Padding: 10px;
+
     }
+
 
     /*
       misc styles, nothing to do with CSS variables
@@ -59,7 +86,7 @@
       color: white;
       font-family: 'helvetica neue', sans-serif;
       font-weight: 100;
-      font-size: 50px;
+      font-size: 40px;
     }
 
     .controls {
