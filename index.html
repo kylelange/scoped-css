@@ -11,8 +11,8 @@
     <label for="spacing">Spacing:</label>
     <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
 
-    <label for="blur">Blur:</label>
-    <input id="blur" type="range" name="blur" min="0" max="25" value="5" data-sizing="px">
+    <label for="hue">Hue-Rotate:</label>
+    <input id="hue" type="range" name="hue" min="0" max="90" value="0" data-sizing="deg">
 
     <label for="radius">Radius:</label>
     <input id="radius" type="range" name="radius" min="0" max="50" value="5" data-sizing="%">
@@ -24,17 +24,9 @@
   <img class="hiker" src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 
   <div class="controls">
-    <label for="spacing">Spacing:</label>
-    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
-
     <label for="blur">Blur:</label>
     <input id="blur" type="range" name="blur" min="0" max="25" value="5" data-sizing="px">
 
-    <label for="radius">Radius:</label>
-    <input id="radius" type="range" name="radius" min="0" max="50" value="5" data-sizing="%">
-
-    <label for="radius">Hue-Rotate:</label>
-    <input id="hue-rotate" type="range" name="radius" min="0" max="90" value="0" data-sizing="deg">
 
   </div>
 
@@ -48,6 +40,7 @@
       --radius: 5%;
       --margin: 10px;
       --hue: 0deg;
+      --greyscale: 0;
     }
 
     .hl {
@@ -57,7 +50,7 @@
     .hiker {
       padding: var(--spacing);
       background-color: var(--base);
-      filter: blur(var(--blur));
+      filter: hue-rotate(var(--hue));
       margin-top: var(--margin);
       -webkit-border-radius: var(--radius);
       -moz-border-radius: var(--radius);
@@ -68,9 +61,11 @@
       width: 800px;
       height: 500px;
       background-color: var(--base);
+      -webkit-border-radius: var(--radius);
+      -moz-border-radius: var(--radius);
       border-radius: var(--rounded);
       Padding: 10px;
-      filter: hue-rotate(var(--hue));
+      filter: blur(var(--blur));
 
     }
 
@@ -86,7 +81,7 @@
     body {
       background: #193549;
       color: white;
-      font-family: 'helvetica neue', sans-serif;
+      font-family: 'avenir next', sans-serif;
       font-weight: 100;
       font-size: 40px;
     }
